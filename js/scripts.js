@@ -17,4 +17,19 @@ $(function() {
     $("#story").show();
     event.preventDefault();
   });
+
+ $("#upForm form").submit(function(event){
+
+   var secret = $("#secret").val();
+
+   $(".theSecret").text(secret.toUpperCase());
+
+
+   $(".hideMe").show();
+   event.preventDefault();
+
+ });
+
+//For file uppercaseIt.html
+
 });
